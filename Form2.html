@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <title>Form Tag Prectice</title>
+        <style>
+            body{
+                align-items: center;
+                padding: 0px 250px 0px 320px;   
+            }
+            td{
+                padding: 10px;
+            }
+            h1{
+                color: violet;
+            }
+            table{
+                border: 3px solid violet;
+                border-radius: 10px;
+                align-items: center;
+                padding: 8px;
+            }
+            label
+            {
+                color: violet;
+            }
+            #btnsbmt{
+                border: 0;
+                background-color: violet;
+                color: white;
+                padding: 6px 10px 6px 10px;
+                border-radius: 8px;
+            }
+            input{
+                border: 0;
+                accent-color: violet;
+            }
+            hr{
+                border: 0.5px solid violet;
+                background-color: violet;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <table>
+                <tr>
+                    <th colspan="2"><h1>Personal Informatioin Form </h1></th>
+                </tr>
+                <tr>
+                    <td>
+                        <label>*</label>Your Name :
+                    </td>
+                    <td>
+                        <input type="text" name="fname" placeholder="First Name" required><br><hr>
+                        <input type="text" name="lname" placeholder="Last Name" required><hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>*</label>Email
+                    </td>
+                    <td>
+                        <input type="email" placeholder="abc@gmail.com"><hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>*</label>Gender
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" value="Male"  required>Male<br>
+                        <input type="radio" name="gender" value="Female" required>Female<br>
+                        <input type="radio" name="gender" value="other" required>Other
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>*</label>
+                        Dath of Birth : 
+                    </td>
+                    <td>
+                        <input type="date"><hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>*</label>
+                        Address : 
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Street address line-1"><br><hr>
+                        <input type="text" placeholder="Street address line-2"><br> <hr>         
+                        <input type="text" placeholder="City" size="5" required>
+                        <select>
+                            <option>Gujarat</option>
+                            <option>Panjab</option>
+                            <option>Rajsthan</option>
+                            <option>Maharastra</option>
+                            <option>W.Bengol</option>
+                            <option>U.P.</option>
+                        </select>
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>*</label>
+                        Mobile Number : 
+                    </td>
+                    <td>
+                        <input type="number" maxlength="10" minlength="10" placeholder="0000000000" required><hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" required> i'll agree to all conditions
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" id="btnsbmt" value="Send">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
